@@ -1,0 +1,79 @@
+/*What is C*/
+// C is programming language developed at AT & T's Bell laboraties of USA in 1972. It was designed and written by a man named Dennis Ritchi. 
+// C has been alredy superseded by languages like C++, C# (C sharp) and JAVA. these make use of a principle called Object Oriented Programming (OOP) to organize the program.
+// major parts of popular operating systems like Windows, UNIX, Linux, Android are witten in C.
+// common consumer devices like microwave ovens, washing machine, digital cameras are getting smarter by the day. This smartness comes from a microprocessor, an operating system and a program embedded in these devices. These programs not only have to run fast but also have to work in limited amount of memory. no wonder that such prigrams are written in C.
+// you must have seen several professional 3D computer gsmes where the user navigates some object, like say a spaceship and fires bullets at invaders.
+// At times one is required to very closely interact with the hardwware devices. since C provides several language elements that make this interaction feasible without compromising the performance.
+
+/*Getting started with C*/
+// steps in learning English language:
+// alphabets-----> Words-----> Sentences-----> Paragraphs
+// steps in learning C language:
+// Alphabets, Digits, Special Symbols-----> Constants, Variables, Keyboards-----> Instructions-----> Program
+
+/*The C character Set*/
+//Alphabets== A,B,C,......X,Y,Z && a,b,c,.......x,y,z
+// Digits== 0,1,2,3,4,5,6,7,8,9
+// Special Symbols==  ~ ` ! @ # $ % ^ & * () _ - + = | \ {} [] : ; "" ' < > . ? /
+
+/* Constants, Variable and Keyboards*/
+// in programming languages constants are often called literals, whereas the variables are called identifiers. the alphabets, digits, and special symbols when properly combined form constants, variables, keyboards. A constant is an entity that doesn't change, a variable is an entity that may chnage, a keyboard is a word that carries special meaning.
+
+/*Types Of Constants in C */
+//ther are 2 types-- 1.Primary constant,,, 2. Secondary constant,,,
+// primary constants are----> integer constant, real constant (floating point constant), character constant
+// secondary constants are-----> Array, Pointer, structure, union, Enum. etc...
+
+/* rules for constructing innteger constants*/
+// 1. an integer constantmust havve at least one digit.   2.it must not have a decimal point.   3. it can be any of zero,positive ,negative.   4. if no sign precedes an integer constant,  it is assumed to be positive.   5. no commas or blanks are allowed within an integer constant.   6. the range of integer constant is (-2147483648 to +2147483647)
+// for visual studio code the range is (-2147483648 to +2147483647) but for turbo C and turbo C++ it is (-32768 to +32767) EXAMPLES: 426, +782, -8000, -7605
+
+/*rules for constructing real connstants*/
+//real constants can be written in the two forms,, 1. fractional form,  2. exponential form:
+// 1. a real constantt must have at least one digit.  2.it must have a decimal point.  3.it could be either positive or negative.  4.default sign is positive. 5.no commas or blanks are allowed within a real constant. EXAMPLES: 325.34, 426.0, -32.76, -48.5792
+// The exponential form is usually used if the value of the constant is either too small or too large. 
+// in exponential form the real constant is represented in two parts. the  part  appearing before "e" is called "mantissa". whereas the part following "e" is called "exponent". for example .000342 can be written as 3.42e-4 which is (3.42*10^-4). 
+// thee mantissa part and the exponential part should be separated by a letter "E" or "e".
+// the mantissa part may have a positive or negative j sign.
+// default sign of mantissa part is positive.
+// the exponent must have at least one digit, which must be a positive or negative integer. default sign is positive.
+// range of real constants expressed in exponential form is  (-3.4e38 to +3.4e38), example: +3.2e-5, 4.1e8, -0.2E+3, -3.2e-5
+
+/*rules for constructing  character constants*/
+// a character constant is a single alphabet, a single digit, a single special symbol enclosed within single inverted commas.
+// both the inverted commas should point to the left, for example: 'A' is a valid character constant whereas `A` is not. example: 'A', 'I', '5', '='
+
+/* types of c varriable*/
+// a particular type of variable can hold only the same type of constant. like an integer variable can hold only an integer constant, similarly for real and character constant. the rules for constructing different types of constants are different. however, for constructing variable names of all types, the same set of rules applies. these rules are given below:-
+
+/*rules for constructing the variable name*/
+// a variable  name is any combination of 1 to 31 alphabets, digits or underscores. somme compilers allow variable names whose length could be upto 247 characters.
+// the first character in the variable must be an alphabet or (_).
+// no commas or blanks are allowed within a variable name.
+// no special symbol other than an underscore(_) can be used in a variable name. example: gross_sal, si_int, pop_e_89.  always create meaningfu variable names, like prin for principle, roi for rate of interest, noy for number of years. don't put arbitrary variable like a, b, c. 
+// rules for creating variable names remains same for all the types of primary and secondary variables. so to help differentiate between variables, C compilers  makes it compulsory to declare the type of any variable that we wish to use ina program. for example:int si; float bassal; char code;
+
+/*C keywords*/
+// keywords are the words whose meaning has already been explained to the C compilers. there are only 32 keywords available in C. which are as follows:
+// auto, double, break, case, char, const,  continue, default, do, else,  enum, extern, float, for, goto, if, int, long, register, return, short, signed, sizeof, static, struct, switch, typedof, union, unsigned, void, volatile, while.
+// the above keywords can not be used as variable names. but you can make those names which are exactly resemble the keywords..
+
+/*the first C programm*/
+// once armed with the knowledge of variables, constant and keywords, the next logical step would be to combine them to form instructions.  the first program is very simple. it calculates simple interest for a set of values representing principal, numbber of years, rate of interest.
+
+/*calculation of simple interest*/
+/*Author: Raj Date: 25/07/2018*/
+// #include <stdio.h>
+// int main()
+// {
+//     int p, n;
+//     float r, si;
+//     p=1000;
+//     n=3;
+//     r=8.5;
+//     /*formula for simple interest*/
+//     si=p*n*r/100;
+//     printf("%f\n",si);
+//     return 0;
+// }
